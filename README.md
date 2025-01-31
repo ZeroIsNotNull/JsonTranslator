@@ -2,12 +2,12 @@
 
 ## What is it for?
 Use this Python Script to translate values of a Json-File.
-The data structure will remain antouched. All values are translated in a target language.
+The data structure will remain untouched. All values are translated in your target language.
 The application uses the DeepTranslator Module.
 It is needed to be installed before starting the application.
 pip install -U deep-translator
 
-## Start it with 4 Params
+## Start the application it with 4 Params
 After installation just call init.py with some parameters.
 For example:
 python init.py --from_language nl --to_language en --input_path snippets.json --output_path translated.json
