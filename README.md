@@ -17,3 +17,4 @@ Parameters: --from_language => define the source language
             --output_path => source Json-File (eg "./traget/translated.json") you wish to translate
 
 
+I added an example snippets.json, which you can use for your trials.
