@@ -1,0 +1,47 @@
+{
+    "messages": {
+        "error": "Er fout opgetreden",
+        "welcome": "Welkom op onze website",
+        "thank_you": "Bedankt voor uw bestelling",
+        "logout": "U bent uitgelogd"
+    },
+    "buttons": {
+        "submit": "Verzenden",
+        "cancel": "Annuleren"
+    },
+    "form": {
+        "title": "Aanmeldingsformulier",
+        "fields": {
+            "username": "Gebruikersnaam",
+            "password": "Wachtwoord",
+            "email": "E-mailadres"
+        }
+    },
+    "policy": {
+        "privacy": "Privacybeleid",
+        "terms": "Algemene voorwaarden"
+    },
+    "order": {
+        "confirmation": "Bestelbevestiging",
+        "shipping": "Verzendinformatie",
+        "payment": {
+            "success": "Betaling geslaagd",
+            "failed": "Betaling mislukt"
+        },
+        "delivery": "Levertijd"
+    },
+    "profile": {
+        "user": "Gebruikersprofiel",
+        "reset_password": "Wachtwoord resetten"
+    },
+    "search": {
+        "placeholder": "Zoeken..."
+    },
+    "help": {
+        "center": "Helpcentrum",
+        "support_contact": "Klantenservice contact"
+    },
+    "error": {
+        "404": "Pagina niet gevonden"
+    }
+}
