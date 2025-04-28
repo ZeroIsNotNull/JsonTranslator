@@ -9,7 +9,7 @@ class JsonTranslator:
         self.input_path = input_path
         self.output_path = output_path
         self.unflatten = unflatten
-        print(f"Class initialized with: {self.input_path} will be translated from {self.from_language} to {self.to_language} and then saved in {self.output_path}")
+        print(f"Class initialized with: {self.input_path} will be translated from {self.from_language} to {self.to_language} and then saved in {self.output_path} and unflatten is {self.unflatten}")
 
     def translate(self): 
         with open(self.input_path, "r", encoding="utf-8") as file:

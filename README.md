@@ -10,7 +10,7 @@ pip install -U deep-translator
 ## Start the application it with 5 Params
 After installation just call init.py with some parameters.
 For example:
-python3 init.py --from_language de --to_language en --input_path snippets.json --output_path translated.json --unflattes true
+python3 init.py --from_language de --to_language en --input_path snippets.json --output_path translated.json --unflatten false
 Parameters: 
            ```markdown
             --from_language => define the source language
