@@ -3,11 +3,12 @@ from deep_translator import GoogleTranslator
 
 class JsonTranslator:
 
-    def __init__(self, from_language: str, to_language: str, input_path: str, output_path: str):
+    def __init__(self, from_language: str, to_language: str, input_path: str, output_path: str, unflatten: str = 'true'):
         self.from_language = from_language
         self.to_language = to_language
         self.input_path = input_path
         self.output_path = output_path
+        self.unflatten = unflatten
         print(f"Class initialized with: {self.input_path} will be translated from {self.from_language} to {self.to_language} and then saved in {self.output_path}")
 
     def translate(self): 
@@ -36,9 +37,10 @@ class JsonTranslator:
         for chunk in chunks:
             translated_chunk = self.translate_chunk(chunk, self.from_language, self.to_language)
             translated_flat_data.update(translated_chunk)
-
-        translated_data = self.unflatten_json(translated_flat_data)
-
+        if self.unflatten == "true":
+            translated_data = self.unflatten_json(translated_flat_data)
+        else:
+            translated_data = translated_flat_data
         with open(self.output_path, "w", encoding="utf-8") as file:
             json.dump(translated_data, file, ensure_ascii=False, indent=4)
         
